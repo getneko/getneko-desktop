@@ -82,7 +82,8 @@
           id="url">
       </div>
 
-      <button title="Sign In" type="submit" class="sign-in_btn" id="submit">
+      <input type="hidden" id="nowlanguage" value="zh-Hans">
+      <button title="Sign In" type="button" class="sign-in_btn" id="submit">
         <span class="fanyi">注 册</span>
       </button>
 
@@ -95,7 +96,7 @@
       <!-- 语言 -->
       <div class="language">
         <!-- 英语 -->
-        <button title="English" type="button" class="sign-in_ggl">
+        <button title="English" type="button" class="sign-in_ggl" onclick='changelanguage("en-US")'>
           <svg t="1706249985388" class="icon" height="20px" width="16px" viewBox="0 0 1024 1024" version="1.1"
             xmlns="http://www.w3.org/2000/svg" p-id="7324">
             <path
@@ -105,7 +106,7 @@
           <span class="lan-but" id="en-US">English</span>
         </button>
         <!-- 中文 -->
-        <button title="简体中文" type="button" class="sign-in_apl">
+        <button title="简体中文" type="button" class="sign-in_apl" onclick='changelanguage("zh-Hans")'>
           <svg t="1706250093848" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
             p-id="8691" height="20px" width="16px">
             <path
@@ -116,7 +117,7 @@
         </button>
 
         <!-- 繁体中文 -->
-        <button title="繁体中文" type="button" class="sign-in_apl">
+        <button title="繁体中文" type="button" class="sign-in_apl" onclick='changelanguage("zh-Hant")'>
           <svg t="1706250179376" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
             p-id="10606" width="20px" height="16px">
             <path
@@ -136,10 +137,10 @@
   </div>
 
 
-
-  <script src="./js/axios-register.js"></script>
-  <script src="./js/register.js"></script>
+  <script src="./js/language.js"></script>
   <script src="./js/errfun.js"></script>
+  <script src="./js/register.js"></script>
+
 </body>
 
 </html>
