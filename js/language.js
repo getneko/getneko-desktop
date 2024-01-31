@@ -25,6 +25,13 @@ const translations = {
                 "Enter email address",
                 "Enter the server URL"
             ]
+        },
+        "tips": {
+            "rlogin": [
+                "Please fill in all required fields",
+                "The password must be at least 6 characters long and must contain a combination of letters and numbers",
+                "Please enter a valid email address"
+            ]
         }
     },
     "zh-Hant": {
@@ -40,7 +47,8 @@ const translations = {
                 "輸入密碼",
                 "輸入伺服器URL"
             ]
-        }, "register": {
+        },
+        "register": {
             "fanyi": [
                 "注册您的帳戶",
                 "開始使用我們的Getneko，只需創建一個帳戶並享受體驗。",
@@ -52,6 +60,13 @@ const translations = {
                 "輸入密碼",
                 "輸入郵箱",
                 "輸入伺服器URL"
+            ]
+        },
+        "tips": {
+            "rlogin": [
+                "請填寫所有必填欄位",
+                "密碼長度至少為6個字元，且必須包含字母和數字的組合",
+                "請輸入有效的郵箱位址"
             ]
         }
     },
@@ -68,7 +83,8 @@ const translations = {
                 "输入密码",
                 "输入服务器URL"
             ]
-        }, "register": {
+        },
+        "register": {
             "fanyi": [
                 "注册您的账户",
                 "开始使用我们的Getneko，只需创建一个帐户并享受体验。",
@@ -81,9 +97,13 @@ const translations = {
                 "输入邮箱",
                 "输入服务器URL"
             ]
+        },
+        "tips": {
+            "rlogin": [
+                "请填写所有必填字段",
+                "密码长度至少为6个字符，且必须包含字母和数字的组合",
+                "请输入有效的邮箱地址"
+            ]
         }
     }
 };
-function getlanguage(lan, page) {
-    return translations[lan][page]
-}

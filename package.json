@@ -1,7 +1,6 @@
 {
   "name": "elelctron",
   "version": "1.0.0",
-
   "description": "getneko",
   "main": "./js/main.js",
   "scripts": {
