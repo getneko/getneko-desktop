@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/axios.js"></script>
+  <link rel="stylesheet" href="./css/register.css">
+
+</head>
+
+<body>
+  <div class="all">
+    <!-- 标题栏 -->
+
+    <form class="form_container">
+
+      <!-- 设置可拖拽部分 -->
+      <div class="navbar"></div>
+
+      <div class="logo_container">
+        <img src="./image/logo.png">
+      </div>
+      <div class="title_container">
+        <p class="title fanyi">注册您的账户</p>
+        <span class="subtitle fanyi">开始使用我们的Getneko，只需创建一个帐户并享受体验。</span>
+      </div>
+      <br>
+      <!-- 注册用户名 -->
+      <div class="input_container">
+        <label class="input_label" for="username_field" id="th">UserName</label>
+        <svg class="icon" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="12" r="8" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M42 44C42 34.0589 33.9411 26 24 26C14.0589 26 6 34.0589 6 44" stroke="#000000" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg> <input placeholder="输入用户名" title="Inpit title" name="input-name" type="text" class="input_field fanyip"
+          id="username" required>
+      </div>
+      <!-- 注册密码 -->
+      <div class="input_container">
+        <label class="input_label" for="password_field">Password</label>
+        <svg class="icon" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M22.8682 24.2982C25.4105 26.7935 26.4138 30.4526 25.4971 33.8863C24.5805 37.32 21.8844 40.0019 18.4325 40.9137C14.9806 41.8256 11.3022 40.8276 8.79375 38.2986C5.02208 34.4141 5.07602 28.2394 8.91499 24.4206C12.754 20.6019 18.9613 20.5482 22.8664 24.3L22.8682 24.2982Z"
+            fill="none" stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+          <path d="M23 24L40 7" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M30.3052 16.9001L35.7337 22.3001L42.0671 16.0001L36.6385 10.6001L30.3052 16.9001Z" fill="none"
+            stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+        </svg> <input placeholder="输入密码" title="Inpit title" name="input-name" type="password"
+          class="input_field fanyip" id="password" required>
+      </div>
+      <!-- 注册邮箱 -->
+      <div class="input_container">
+        <label class="input_label" for="email_field">Email</label>
+        <svg class="icon" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 39H44V24V9H24H4V24V39Z" fill="none" stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+          <path d="M4 9L24 24L44 9" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M24 9H4V24" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M44 24V9H24" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <input placeholder="输入邮箱" title="Inpit title" name="input-name" type="text" class="input_field fanyip"
+          id="email" required>
+      </div>
+
+      <!-- 注册服务器地址 -->
+      <div class="input_container">
+        <label class="input_label" for="email_field">BaseUrl</label>
+        <svg class="icon" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M44 4H4V20H44V4Z" fill="none" stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+          <path d="M44 28H4V44H44V28Z" fill="none" stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+          <path
+            d="M13 10H11C10.4477 10 10 10.4477 10 11V13C10 13.5523 10.4477 14 11 14H13C13.5523 14 14 13.5523 14 13V11C14 10.4477 13.5523 10 13 10Z"
+            fill="#000000" />
+          <path
+            d="M13 34H11C10.4477 34 10 34.4477 10 35V37C10 37.5523 10.4477 38 11 38H13C13.5523 38 14 37.5523 14 37V35C14 34.4477 13.5523 34 13 34Z"
+            fill="#000000" />
+          <path
+            d="M21 10H19C18.4477 10 18 10.4477 18 11V13C18 13.5523 18.4477 14 19 14H21C21.5523 14 22 13.5523 22 13V11C22 10.4477 21.5523 10 21 10Z"
+            fill="#000000" />
+          <path
+            d="M21 34H19C18.4477 34 18 34.4477 18 35V37C18 37.5523 18.4477 38 19 38H21C21.5523 38 22 37.5523 22 37V35C22 34.4477 21.5523 34 21 34Z"
+            fill="#000000" />
+        </svg>
+        <input placeholder="输入服务器URL" title="Inpit title" name="input-name" type="text" class="input_field fanyip"
+          id="url" required>
+      </div>
+
+      <button title="Sign In" type="button" class="sign-in_btn" id="submit">
+        <span class="fanyi">注 册</span>
+      </button>
+
+      <div class="separator">
+        <hr class="line">
+        <span>Language</span>
+        <hr class="line">
+      </div>
+
+      <!-- 语言 -->
+      <div class="language">
+        <!-- 英语 -->
+        <button title="English" type="button" class="sign-in_ggl onclick" id="en-US">
+          <svg class="icon" height="20px" width="16px" viewBox="0 0 48 48" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="6" width="36" height="36" rx="3" fill="#e43232" stroke="#e43232" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M13 31V17H21" stroke="#FFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M13 24H20.5" stroke="#FFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M13 31H20.5" stroke="#FFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M26 31L26 19" stroke="#FFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M26 31L26 24.5C26 22.0147 28.0147 20 30.5 20V20C32.9853 20 35 22.0147 35 24.5L35 31" stroke="#FFF"
+              stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span>English</span>
+        </button>
+        <!-- 中文 -->
+        <button title="简体中文" type="button" class="sign-in_apl onclick" id="zh-Hans">
+          <svg class="icon" height="20px" width="16px" viewBox="0 0 48 48" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="6" width="36" height="36" rx="3" fill="#3255e4" stroke="#3255e4" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M21 19.9389C20.6008 18.7746 19.403 16.737 17.0076 17.0281C14.6122 17.3193 12.8152 20.5211 13.0152 24.5962C13.2152 28.6714 15.4106 31 17.4068 31C19.8023 31 21 28.2056 21 28.2056"
+              stroke="#FFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M26 31L26 19" stroke="#FFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M26 31L26 24.5C26 22.0147 28.0147 20 30.5 20V20C32.9853 20 35 22.0147 35 24.5L35 31" stroke="#FFF"
+              stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span>简体中文</span>
+        </button>
+
+        <!-- 繁体中文 -->
+        <button title="繁体中文" type="button" class="sign-in_apl onclick" id="zh-Hant">
+          <svg class="icon" height="20px" width="16px" viewBox="0 0 48 48" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="6" width="36" height="36" rx="3" fill="none" stroke="#e66331" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <rect x="14" y="18" width="20" height="10" fill="none" stroke="#e66331" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M24 14V35" stroke="#e66331" stroke-width="3" stroke-linecap="round" />
+          </svg> <span>繁体中文</span>
+        </button>
+      </div>
+
+      <a href="login.html" class="note fanyi">已有账号？前往登录</a>
+    </form>
+  </div>
+
+
+  <script src="./js/language.js"></script>
+  <script src="./js/errfun.js"></script>
+  <script src="./js/register.js"></script>
+
+</body>
+
+</html>
