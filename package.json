@@ -1,0 +1,15 @@
+{
+  "name": "elelctron",
+  "version": "1.0.0",
+  "description": "getneko",
+  "main": "./js/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "getneko",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.1.4"
+  }
+}
